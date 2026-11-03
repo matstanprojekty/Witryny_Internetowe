@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formularz Mateusz Stańczyk</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="strona">
+        <header class="naglowek">
+            <h1>Mateusz Stańczyk</h1>
+            <div class="logo">
+                <img src="logo.png" alt="Logo szkoły">
+            </div>
+        </header>
+ 
+        <div class="zawartosc">
+            <section class="kolumna-formularza" aria-labelledby="tytul-formularza">
+                <form id="formularz" action="index2.html" method="get">
+                    <fieldset>
+                        <legend id="tytul-formularza">Dane osobowe</legend>
+                        <div class="pole">
+                            <label for="imie">Imię</label>
+                            <input id="imie" name="imie" type="text" autocomplete="given-name" required>
+                        </div>
+                        <div class="pole">
+                            <label for="nazwisko">Nazwisko</label>
+                            <input id="nazwisko" name="nazwisko" type="text" autocomplete="family-name"
+                               pattern="[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]+([ '-][A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]+)*"
+                               title="Użyj tylko liter; dozwolone są spacje, łączniki i apostrofy."
+                               required>
+                        </div>
+                        <div class="pole">
+                            <label for="wiek">Wiek</label>
+                            <input id="wiek" name="wiek" type="number" min="0" max="150" required>
+                        </div>
+                    </fieldset>
+                    <div id="komunikaty" class="komunikaty" aria-live="polite"></div>
+                    <button type="submit">Wyślij</button>
+                </form>
+            </section>
+ 
+            <section class="panel-klienta" aria-labelledby="tytul-klienta">
+                <h2 id="tytul-klienta">Dane klienta</h2>
+                <p id="wynik" aria-live="polite"></p>
+            </section>
+        </div>
+ 
+        <footer class="stopka">Stopka</footer>
+    </main>
+</body>
+</html>

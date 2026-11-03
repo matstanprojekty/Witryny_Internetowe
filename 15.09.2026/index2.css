@@ -1,0 +1,33 @@
+body {
+    margin: 0 px;
+    /*background-image: linear-gradient(to right, rgb(237, 244, 247), rgb(95, 166, 224));*/ /*gradient*/
+    background-image: url(tlo.png); /*wgranie tła*/
+    background-repeat: repeat-x; /*powtarzanie tego "paska" w poziomie*/
+}
+
+#content {
+    background-color: white;
+    padding: 20px;
+    width: 960px;
+    /*height: 850px;*/
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto; /*suwak*/
+    /*border-radius: 20px 40px 60px 80px;*/
+}
+
+#box {
+    width: 400px;
+    height: 400px;
+    border: 2px #000 solid;
+    border-radius: 200px;
+}
+
+p { 
+    font-size: 1.1em;
+
+    column-count: 3; /*kolumny*/
+    column-gap: 3em; /*jednostka "em"*/
+    column-rule: 5px solid rgb(0, 0, 0);
+}
+

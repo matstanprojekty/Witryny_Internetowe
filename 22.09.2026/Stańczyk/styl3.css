@@ -1,0 +1,97 @@
+* {
+    font-family: Georgia;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #C75B39;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+aside {
+    background-color: #FF8A65;
+    width: 25%;
+    height: 500px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: Snow;
+    width: 75%;
+    height: 500px;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 25%;
+    margin: 10px;
+    box-shadow: 15px 15px 10px DimGray;
+}
+
+li {
+    margin: 5px;
+}
+
+li::marker {
+    color: Snow;
+}
+
+h3 {
+    margin: 50px 0;
+}
+
+.kontener {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.wyszukiwarka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Minimalny odstęp między tekstem, polem i przyciskiem */
+  font-size: 14px;
+}
+
+.wyszukiwarka input {
+  border: 1px solid #999;
+  padding: 2px 5px;
+  height: 20px;
+  width: 180px;
+}
+
+.wyszukiwarka button {
+  background-color: #f0f0f0;
+  border: 1px solid #777;
+  border-radius: 3px;
+  padding: 2px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.wynik {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
