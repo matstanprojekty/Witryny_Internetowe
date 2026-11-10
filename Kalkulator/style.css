@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    color: #222;
+    background: #dfdbdb;
+    font-family: Arial;
+}
+
+.okno-kalkulator {
+    width: min(100%, 600px);
+    padding: 35px;
+    border: 1px solid #7c0e0e;
+    background: #fff;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.opis-kalkulator {
+    margin: 8px 0 20px;
+    text-align: center;
+}
+
+.pola {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.pola input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    font: inherit;
+}
+
+.dzialania {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.dzialania button {
+    padding: 9px;
+    border: 1px solid #5e2525;
+    background: #6b3939;
+    color: #222;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    color: white;
+}
+
+.dzialania button:hover {
+    background: #f49a9a;
+}
+
+#wynik-kalkulator {
+    min-height: 42px;
+    margin: 16px 0 0;
+    padding: 10px;
+    border: 2px solid #000000;
+    color: #c00;
+    overflow-wrap: anywhere;
+    text-align: center;
+    font-weight: bold;
+}
